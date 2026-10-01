@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <h2>Portofolio</h2>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar" id="navbarMenu">
+      <a href="#home" class="nav-link active">About Me</a>
+      <a href="#education" class="nav-link">Pendidikan</a>
+      <a href="#projects" class="nav-link">Karya</a>
+      <a href="#contact" class="nav-link">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="content">
+        <span class="badge">Halo, Selamat Datang!</span>
+        <h1 class="title">Marsha Hafiz Devara</h1>
+        <p class="subtitle">Mahasiswa Universitas Jember</p>
+        <p class="description">
+          Saya adalah seorang mahasiswa Universitas Jember program studi Teknologi Informasi angkatan 2025
+          yang sedang berfokus pada pembelajaran mengenai ilmu komputer dengan hobi editing video yang menarik.
+          Selamat melihat karya saya!
+        </p>
+
+        <div class="buttons">
+          <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+          <a href="#projects" class="btn btn-outline">Lihat Karya</a>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <div class="photo-frame">
+          <img src="img/marsha.jpeg" alt="Foto Profil" id="profileImage">
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section-title">Jenjang Pendidikan</h2>
+      <div class="education-grid">
+        
+        <div class="card">
+          <span class="year">2025 - Sekarang</span>
+          <h3>S1 Teknologi Informasi / Ilmu Komputer</h3>
+          <p class="school-name">Universitas Jember</p>
+          <p>Mempelajari dasar-dasar pemrograman web, struktur data, pengembangan aplikasi dan perangkat hardware.</p>
+        </div>
+
+        <div class="card">
+          <span class="year">2022 - 2025</span>
+          <h3>SMA</h3>
+          <p class="school-name">SMAN 2 JEMBER</p>
+          <p>Mempelajari dasar-dasar mata pelajaran sebagai fondasi utama untuk jenjang kuliah selanjutnya.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Hasil Karya</h2>
+      <div class="projects-grid">
+        <div class="card project-card">
+          <div class="video-container">
+            <video controls poster="https://via.placeholder.com/600x340/323232/14FFEC?text=Thumbnail+Video">
+              <source src="img/ppmb.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-info">        
+            <h3>Motion Graphic</h3>
+            <p>Video di atas merupakan hasil karya motion graphic saya.</p>
+            <div class="tech-tags">
+              <span>After Effect 2023</span>
+              <span>Capcut</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="video-container">
+            <video controls poster="https://via.placeholder.com/600x340/323232/14FFEC?text=Thumbnail+Video">
+              <source src="img/Spotify_motion.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-info">        
+            <h3>Motion Graphic</h3>
+            <p>Video di atas merupakan hasil karya motion graphic saya.</p>
+            <div class="tech-tags">
+              <span>After Effect 2023</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Kontak</h2>
+      <div class="card contact-card">
+        <ul class="contact-list">
+          <li>Instagram: <a href="https://instagram.com/marsha.kecil" target="_blank" rel="noopener noreferrer">@marsha.kecil</a></li>
+          <li>YouTube: <a href="https://www.youtube.com/@marshadevara6776" target="_blank" rel="noopener noreferrer">Insapz</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sulap" class="section">
+      <h2 class="section-title">Sulap by Marsha</h2>
+      <div class="card sulap-card">
+        <h3>Saya bisa menebak umur anda dari tanggal lahir anda haha</h3>
+        <label for="birthdate">Masukkan tanggal lahir anda</label>
+        <br><br>
+        <input type="date" class="sulap-birthdate" id="birthdate" name="birthdate">
+        <button id="btn-konfirmasi-tanggal-lahir" class="btn btn-konfirmasi">Konfirmasi</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Portofolio Saya. Dibuat dengan HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="scriptCV.js"></script>
+</body>
+</html>
